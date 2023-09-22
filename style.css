@@ -4,14 +4,13 @@ body{
   
 #todo{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
+    margin-top: 10%;
     width:350px;
-    height: 420px;
+    height: auto;
     border-radius: 1%;
     
 }
@@ -19,11 +18,15 @@ body{
 .amigo {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    border-top: 1px solid;
+    margin-bottom: 0;
+    border-bottom: 1px solid;
     padding-top: 12px;
     padding-bottom: 12px;
     padding: 12px;
+}
+
+.amigo:last-child{
+    border-bottom: none;
 }
   
 .amigo img {
@@ -32,10 +35,11 @@ body{
     border-radius: 50%;
     margin-right: 10px;
 }
-  
 
-
-.amigo .estado{
+.amigo span{
+    color: grey;
     font-size: 14px;
     text-align: justify;
+    padding-top: 25px;
+    margin-right: 100px;
 }
